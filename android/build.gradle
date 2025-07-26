@@ -43,6 +43,8 @@ android {
     defaultConfig {
         minSdkVersion 16
     }
+
+    namespace "com.PavelGalaktionov.address_search_field_5.0.3"
 }
 
 dependencies {
