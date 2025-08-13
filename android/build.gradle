@@ -44,7 +44,7 @@ android {
         minSdkVersion 16
     }
 
-    namespace "com.pavelgalaktionov.address_search_field503"
+    namespace "com.pavelgalaktionov.address_search_field"
 }
 
 dependencies {
