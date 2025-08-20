@@ -1,52 +1,31 @@
-group 'dev.jostech.address_search_field'
-version '5.0.0'
-
-buildscript {
-    ext.kotlin_version = '1.6.10'
-    repositories {
-        google()
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
 }
-
-rootProject.allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 31
+    // MUSÍ být – sedí s package pluginu (viz GeneratedPluginRegistrant)
+    namespace 'dev.jostech.address_search_field'
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+    // zvol stejné číslo jako appka
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+        // pro knihovnu targetSdk není nutné
     }
 
-    kotlinOptions {
-        jvmTarget = '1.8'
-    }
-
+    // pokud má plugin Kotlin soubory v src/main/kotlin (běžné u Flutter pluginů)
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
 
-    defaultConfig {
-        minSdkVersion 16
+    kotlinOptions {
+        jvmTarget = '17'
     }
-
-    namespace "com.pavelgalaktionov.address_search_field"
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    // obvykle nic navíc; stdlib dotáhne kotlin plugin
+    // nech prázdné, pokud plugin nic nepotřebuje
 }
