@@ -78,14 +78,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.1"
-  flutter_plugin_android_lifecycle:
-    dependency: transitive
-    description:
-      name: flutter_plugin_android_lifecycle
-      sha256: "5c574d21b98ec92adab05ead10afd2b13ff5856c7ca79696edb338a9dd8ed387"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.5"
   flutter_riverpod:
     dependency: "direct main"
     description:
@@ -112,14 +104,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.10"
-  google_maps_flutter_platform_interface:
-    dependency: transitive
-    description:
-      name: google_maps_flutter_platform_interface
-      sha256: b26afd071ced828d304892163a88902167e11a732e7ef9c33bab0e1b91c4295e
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.2.1"
   http_parser:
     dependency: transitive
     description:
@@ -192,14 +176,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
-  plugin_platform_interface:
-    dependency: transitive
-    description:
-      name: plugin_platform_interface
-      sha256: "075f927ebbab4262ace8d0b283929ac5410c0ac4e7fc123c76429564facfb757"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.1.2"
   riverpod:
     dependency: transitive
     description:
@@ -245,14 +221,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
-  stream_transform:
-    dependency: transitive
-    description:
-      name: stream_transform
-      sha256: ed464977cb26a1f41537e177e190c67223dbd9f4f683489b6ab2e5d211ec564e
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.0"
   string_scanner:
     dependency: transitive
     description:
